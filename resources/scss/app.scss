@@ -12,17 +12,33 @@ img {
 }
 
 body {
-    background-color: #222;
+    background-color: #311852;
     color: white;
 }
 
 header,
 footer {
     width: 100%;
-    background: #EEE;
-    color: black;
+    color: white;
+    background-color: #4d36dc;
 }
 
-header img.logo {
-    height: 2rem;
+.card{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .info{
+        display: none;
+    }
+
+    &:hover img{
+        display: none;
+    }
+    &:hover .info{
+        display: block;
+    }
 }
+
+
